@@ -5,5 +5,5 @@
 * [Introduction](README.md)
 * [基本入门](chapter1.md)
 * [深入搜索](shen-ru-sou-suo.md)
-  * 近似搜索
+  * [近似搜索](shen-ru-sou-suo/jin-si-sou-suo.md)
 
