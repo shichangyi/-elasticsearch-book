@@ -32,7 +32,9 @@ GET /my_index/my_type/_search
 
 > 多值字段
 
+```
 
+```
 
 
 
