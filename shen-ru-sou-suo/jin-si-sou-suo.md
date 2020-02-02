@@ -88,7 +88,7 @@ GET /my_index/my_type/_search
         "match": { # 匹配大多数文档
           "title": {
             "query":  "quick brown fox",
-            "minimum_should_match": "30%" # 减尾，消除太多不相干的文档
+            "minimum_should_match": "30%" # 减尾减支，消除太多不相干的文档
           }
         }
       },
@@ -103,9 +103,6 @@ GET /my_index/my_type/_search
     }
   }
 }
-
-
-
 ```
 
 > 性能优化
