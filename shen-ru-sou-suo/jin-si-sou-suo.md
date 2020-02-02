@@ -28,28 +28,14 @@ GET /my_index/my_type/_search
         }
     } 
 }
-
-
-```
-
-xxx  this is
-
-```
-GET /my_index/my_type/_search
-{
-    "query": {
-        "match_phrase": {
-            "title": {
-                "query": "quick fox",
-                "slop":  1
-            }
-        }
-    }
-}
 ```
 
 > 多值字段
->
+
+
+
+
+
 > 越近越好
 >
 > 使用邻近度提高相关度
