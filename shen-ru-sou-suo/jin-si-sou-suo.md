@@ -19,6 +19,17 @@ GET /my_index/my_type/_search
 
 ```markdown
 # slop 参数的意义
+GET /my_index/my_type/_search
+{
+    "query": {
+        "match_phrase": {
+            "title": "quick brown fox",
+            "slop" : 10
+        }
+    } 
+}
+
+
 ```
 
 xxx  this is
