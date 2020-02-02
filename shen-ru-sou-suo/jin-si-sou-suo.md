@@ -107,7 +107,7 @@ GET /my_index/my_type/_search
 
 > 性能优化
 
-```
+```markdown
 # match_phrase 比 term 查询慢10倍
 # 临近查询 比 term 慢 20 倍
 # 提升临近查询的思路， 就是减少临近查询 匹配的文档
@@ -129,10 +129,9 @@ POST bigcrmindex/_search?routing=21299
     },
     "window_size": 50
   },
-  
+
   "_source": ["f_name","f_company"]
 }
-
 ```
 
 > 找相关词
