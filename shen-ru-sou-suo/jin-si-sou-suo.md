@@ -1,14 +1,21 @@
 > 短语匹配
 
-```
-基本格式
+
+
+a
+
+
+
+```markdown
+# match_phrase
+
 GET /my_index/my_type/_search
 {
     "query": {
         "match_phrase": {
             "title": "quick brown fox"
         }
-    }
+    } 
 }
 
 #什么情况下会被命中
@@ -16,8 +23,8 @@ GET /my_index/my_type/_search
 
 > 混合起来
 
-```
-slop 参数的意义
+```markdown
+# slop 参数的意义
 ```
 
 xxx  this is
