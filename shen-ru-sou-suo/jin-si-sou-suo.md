@@ -119,7 +119,7 @@ POST bigcrmindex/_search?routing=21299
       "f_name": "六度人和"
     }
   },
-  "rescore": {
+  "rescore": { # 重排分数
     "query": {
       "rescore_query":{
         "match_phrase": {
@@ -127,7 +127,7 @@ POST bigcrmindex/_search?routing=21299
         }
       }
     },
-    "window_size": 50
+    "window_size": 50  # 重排每个分片的前50
   },
 
   "_source": ["f_name","f_company"]
