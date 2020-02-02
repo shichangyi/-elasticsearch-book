@@ -68,7 +68,43 @@ PUT /my_index/_mapping/groups
 
 > 使用邻近度提高相关度
 
-```
+```markdown
+# 场景 查询 "quick brown fox", 期望 查询相关度 按如下优先级返回
+# 1. 精确包含 quick brown fox 查询出来
+# 2，如果 quick this brown fox 也能查询出来
+# 3. quick fox , fox 也能搜索出来
+
+#解决办法， 
+# 1.使用 match 对 quick brown fox 查询， 将返回大量的文档， 在 match 里面
+# 2. 使用近视查询 来增强 分数， 调整相关性， 越相关，越靠前
+
+## 代码如下
+
+GET /my_index/my_type/_search
+{
+  "query": {
+    "bool": {
+      "must": {
+        "match": { # 匹配大多数文档
+          "title": {
+            "query":  "quick brown fox",
+            "minimum_should_match": "30%" # 减尾，消除太多不相干的文档
+          }
+        }
+      },
+      "should": {  # should 被用来增强分数， 调整相关性
+        "match_phrase": { # 近视匹配
+          "title": {
+            "query": "quick brown fox",
+            "slop":  50
+          }
+        }
+      }
+    }
+  }
+}
+
+
 
 ```
 
