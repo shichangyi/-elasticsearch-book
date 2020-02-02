@@ -18,7 +18,6 @@ GET /my_index/my_type/_search
         }
     }
 }
-
 ```
 
 > 混合起来
