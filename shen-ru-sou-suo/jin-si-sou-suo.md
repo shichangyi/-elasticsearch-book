@@ -22,8 +22,22 @@ GET /my_index/my_type/_search
 
 > 混合起来
 
-```
+安心
 
+xxx  this is
+
+```
+GET /my_index/my_type/_search
+{
+    "query": {
+        "match_phrase": {
+            "title": {
+            	"query": "quick fox",
+            	"slop":  1
+            }
+        }
+    }
+}
 ```
 
 > 多值字段
