@@ -9,7 +9,7 @@ brown 的位置应该比 quick 的位置大 1 。
 fox 的位置应该比 quick 的位置大 2 。
 
 
-查询 
+查询格式
 GET /my_index/my_type/_search
 {
     "query": {
