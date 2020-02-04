@@ -36,7 +36,6 @@ POST /bigcrmindex/_search?routing=21299
 # regexp    查询原理 跟 prefix 一样， 只是支持通配符，都是扫描 terms
 # wildcard   & regexp & prefix 不会对查询词做人和分析的， 不区分大小写，原样查询
 
-
 ```
 
 
