@@ -75,6 +75,12 @@ GET /my_index/address/_search
 
 # [索引时优化](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_index_time_optimizations.html)
 
+```
+
+```
+
+
+
 # 
 
 # [Ngrams 在部分匹配的应用](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_ngrams_for_partial_matching.html)
