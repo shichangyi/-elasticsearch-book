@@ -63,7 +63,6 @@ GET /my_index/address/_search
 # johnnie 开始
 # 跟着 walker
 # 跟着以 bl 开始的词 ， 其中 bl 是部分查询， 相当于 bl*, 这个查询， 使用的是 prefix
-# 所有部分前缀查询，都有个性能隐患， 如果 前缀， 命中了 上百万个词条， 那是很慢的
 {
     "match_phrase_prefix" : {
         "brand" : {
@@ -72,6 +71,18 @@ GET /my_index/address/_search
         }
     }
 }
+
+# 所有部分前缀查询，都有个性能隐患， 如果 前缀， 命中了 上百万个词条， 那是很慢的， 
+#可以通过 max_expansions 限制扫描前缀的数量
+{
+    "match_phrase_prefix" : {
+        "brand" : {
+            "query":          "johnnie walker bl",
+            "max_expansions": 50   # 最大扩展50个前缀
+        }
+    }
+} 
+
 ```
 
 # [索引时优化](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_index_time_optimizations.html)
