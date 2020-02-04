@@ -57,7 +57,20 @@ GET /my_index/address/_search
 
 # [查询时输入即搜索](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_query_time_search_as_you_type.html)
 
-```
+```markdown
+# 如何实现用户一边输入， 一边查询呢
+# 可以使用 match_phrase_prefix, 跟 match_phrase原理类似， 不同的是。它的原理如下
+#johnnie 开始
+#跟着 walker
+#跟着以 bl 开始的词 ， 其中 bl 是部分查询， 相当于 bl*, 这个查询， 使用的是 prefix
+{
+    "match_phrase_prefix" : {
+        "brand" : {
+            "query": "walker johnnie bl", 
+            "slop":  10
+        }
+    }
+}
 
 ```
 
