@@ -1,4 +1,4 @@
-# **`prefix`**
+# [**prefix 前缀查询**](https://www.elastic.co/guide/cn/elasticsearch/guide/current/prefix-query.html)
 
 ```markdown
 # prefix 查询是低级查询， 查询方式是去扫描 倒排索引的 terms, 然后获取id
@@ -29,9 +29,7 @@ POST /bigcrmindex/_search?routing=21299
 }
 ```
 
-
-
-# **`prefix`**
+# `prefix`
 
 ```markdown
 # prefix 查询是低级查询， 查询方式是去扫描 倒排索引的 terms, 然后获取id
