@@ -55,51 +55,23 @@ GET /my_index/address/_search
 }
 ```
 
+# [查询时输入即搜索](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_query_time_search_as_you_type.html)
 
 
 
+# [索引时优化](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_index_time_optimizations.html)
 
+# 
 
+# [Ngrams 在部分匹配的应用](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_ngrams_for_partial_matching.html)
 
+# 
 
+# [索引时输入即搜索](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_index_time_search_as_you_type.html)
 
+# 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# [Ngrams 在复合词的应用](https://www.elastic.co/guide/cn/elasticsearch/guide/current/ngrams-compound-words.html)
 
 
 
