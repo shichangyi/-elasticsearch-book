@@ -29,7 +29,7 @@ POST /bigcrmindex/_search?routing=21299
 }
 ```
 
-# `prefix`
+# [通配符与正则表达式查询](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_wildcard_and_regexp_queries.html)
 
 ```markdown
 # prefix 查询是低级查询， 查询方式是去扫描 倒排索引的 terms, 然后获取id
