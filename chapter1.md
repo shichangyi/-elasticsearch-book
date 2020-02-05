@@ -50,6 +50,23 @@ POST /bigcrmindex,index_*/_search
     }
   }
 }
+
+
+ "aggs": {
+    "create": {
+      "date_histogram": {
+        "script": "doc['f_create_time'][0]",
+        "calendar_interval": "1y",
+        "format": "yyyy" ,
+        "extended_bounds": { # 数据不冲。数据集合 包括 2019 到 2020， 但是可能还有其他
+          "min": "2019",
+          "max": "2020"
+        }
+      }
+    }
+  }
+  
+  
 ```
 
 * [范围限定的聚合](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_scoping_aggregations.html)
