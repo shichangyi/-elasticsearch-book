@@ -24,7 +24,6 @@ POST /bigcrmindex,index_*/_search
     }
   }
 }
-
 ```
 
 * [按时间统计](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_looking_at_time.html)
@@ -51,11 +50,14 @@ POST /bigcrmindex,index_*/_search
     }
   }
 }
-
-
 ```
 
 * [范围限定的聚合](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_scoping_aggregations.html)
+
+```
+
+```
+
 * [过滤和聚合](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_filtering_queries_and_aggregations.html)
 * [多桶排序](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_sorting_multivalue_buckets.html)
 * [近似聚合](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_approximate_aggregations.html)
